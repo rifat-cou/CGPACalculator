@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: University Logo and Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivAppLogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cou"
+                android:contentDescription="CoU" />
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Comilla University"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Department Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvDeptName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department of Information &amp; Communication Technology"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!-- Student Details -->
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: John Doe"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tvStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID No.: 123456"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration No.: 2021-0001"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session: 2021-22"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth: 1999-01-01"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!-- Section Title for Semester Results -->
+        <TextView
+            android:id="@+id/tvSectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester Wise Result"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:gravity="center"/>
+
+        <!-- RecyclerView for Semester Results -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSemesterResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Overall CGPA -->
+        <TextView
+            android:id="@+id/tvOverallCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Obtained CGPA: 3.75 (A-)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="5px"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="300dp"
+
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signature"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+</ScrollView>

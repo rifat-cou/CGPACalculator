@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457117262083",
+    "project_id": "cgpa-calculator-1",
+    "storage_bucket": "cgpa-calculator-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457117262083:android:0037aaaa12c255b1ed0936",
+        "android_client_info": {
+          "package_name": "com.example.cgpacalcutator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNROyLjbHFtFug6erEEcZnD5aN091C70Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

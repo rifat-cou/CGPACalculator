@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/login_bg">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:textColorHint="#404040"
+        android:textColor="@color/black" />
+
+    <!-- Student ID Input -->
+    <EditText
+        android:id="@+id/etStudentID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Student ID"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:inputType="number"/>
+
+    <!-- Registration No Input -->
+    <EditText
+        android:id="@+id/etRegNo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Registration No."
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:inputType="number"/>
+
+    <!-- Session Input -->
+    <EditText
+        android:id="@+id/etSession"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Session (e.g. 2021-22)"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:inputType="text"/>
+
+    <!-- Date of Birth Picker -->
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Date of Birth (YYYY-MM-DD)"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"/>
+
+    <!-- Institutional Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Institutional Email"
+        android:textColor="@color/black"
+        android:textColorHint="#404040"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Password Input with Show/Hide -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="#404040"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/togglePassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_visibility_off"
+            android:contentDescription="Toggle Password Visibility"/>
+    </LinearLayout>
+
+    <!-- Confirm Password Input with Show/Hide -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:hint="Confirm Password"
+            android:textColor="@color/black"
+            android:textColorHint="#404040"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/toggleConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_visibility_off"
+            android:contentDescription="Toggle Confirm Password Visibility"/>
+    </LinearLayout>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Register Now"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/register"/>
+
+</LinearLayout>
