@@ -104,8 +104,6 @@ flowchart LR
 
 ## 🎨 UI / App Screens
 
-> Add your own screenshots to `docs/screenshots/` and update the table below — this keeps the README self-contained on GitHub.
-
 | Home | Registration | Dashboard |
 |---|---|---|
 | <img src="Assets/Home.jpg" width="300" alt="Home Dashboard" /> | <img src="Assets/Registration.jpg" width="300" alt="Registration" /> | <img src="Assets/Dashboard.jpg" width="300" alt="Dashboard" /> |
