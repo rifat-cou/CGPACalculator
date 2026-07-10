@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/login_bg"
+    android:padding="10dp">
+
+    <!-- App Logo -->
+
+    <!-- Username/Email/Student ID -->
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"
+        android:src="@drawable/app_logo" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#404040"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/togglePassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_visibility_off"
+            android:contentDescription="Toggle Password Visibility"/>
+    </LinearLayout>
+
+    <!-- Remember Password Checkbox -->
+    <CheckBox
+        android:id="@+id/checkboxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:text="Remember Password"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Forgot Password Button -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Forgot Password?"
+        android:textColor="#5D07F4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Log In Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:icon="@drawable/login" />
+
+    <!-- Don't have an account? Register -->
+    <TextView
+        android:id="@+id/tvRegisterPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Don't have an account?"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Register Now Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Register Now"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/register"
+    />
+
+</LinearLayout>

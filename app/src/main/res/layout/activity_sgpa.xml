@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Row: App Logo and App Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivAppLogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cou"
+                android:contentDescription="CoU" />
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Comilla University"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Department Row -->
+
+        <TextView
+                android:id="@+id/tvDeptName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department of Information &amp; Communication Technology"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        <!-- Student Details -->
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: John Doe"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tvStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID: 123456"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration No: 2021-0001"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session: 2021-22"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth: 1999-01-01"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!-- Semester Result Title -->
+        <TextView
+            android:id="@+id/tvSemesterResultTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Year First Semester Result"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+        <!-- Course List: RecyclerView for displaying courses -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCourseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- SGPA Display -->
+        <TextView
+            android:id="@+id/tvSGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Obtained SGPA: 3.75 (A-)"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

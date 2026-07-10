@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Semester Heading -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvSemesterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Year First Semester"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!-- RecyclerView for Course List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        tools:ignore="NotSibling" />
+
+    <!-- Text below the course list -->
+    <TextView
+        android:id="@+id/tvAddCourseHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click + to add course."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Floating Button to Add Course -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/add_icon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- SGPA Button -->
+    <Button
+        android:id="@+id/btnShowSGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show SGPA"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"/>
+
+</LinearLayout>
