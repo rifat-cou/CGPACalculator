@@ -91,7 +91,6 @@ flowchart LR
 ---
 
 ## 🔄 Application Process Flow
-
 ![CGPA pipeline animation](Assets/cgpa_calculator_workflow_animation.svg)
 
 ## 🔄 Flowchart
