@@ -92,6 +92,10 @@ flowchart LR
 
 ## 🔄 Application Process Flow
 
+![CGPA pipeline animation](Assets/cgpa_calculator_workflow_animation.svg)
+
+## 🔄 Flowchart
+
 <img src="Assets/flow_chat.png" width="850" alt="System Flowchart" />
 
 **Calculation logic:**
